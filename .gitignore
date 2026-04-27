@@ -1,0 +1,18 @@
+# Python cache/virtualenv
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local outputs and intermediate artifacts
+results.txt
+*_results.txt
+temp_output_check.txt
+
+# Debug and rendered images
+dbg_*.png
+page*.png
+
+# Potentially sensitive source/report files
+*.pdf
+image.png
