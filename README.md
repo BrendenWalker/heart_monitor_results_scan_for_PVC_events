@@ -2,6 +2,12 @@
 
 This project scans a full-disclosure ECG PDF and finds occurrences of a target PVC-like waveform shape using image-based template matching.
 
+## About the monitoring service (Zio / iRhythm)
+
+Reports processed here are often produced by **ambulatory ECG monitoring** from [iRhythm Technologies](https://www.irhythmtech.com/us/en), whose service centers on the **Zio®** patch-style ECG monitors used to detect arrhythmias over extended wear. On their site, iRhythm describes an end-to-end workflow: patient wear of the Zio device, **AI-assisted analysis** (FDA-cleared deep learning in supported regions), verification by **Qualified Cardiac Technicians (QCTs)**, and **physician-ready reports**. They also highlight **ZioSuite®** for clinicians (report interpretation and patient management), **EHR integration**, and the **MyZio®** patient app for symptoms, education, and reminders.
+
+This repository is **independent tooling** for searching PDF waveforms; it is **not** affiliated with, endorsed by, or supported by iRhythm. For device instructions, clinical use, billing, and official documentation, use [iRhythm’s site](https://www.irhythmtech.com/us/en) and your care team.
+
 ## What the script does
 
 - Reads a full-disclosure ECG PDF where each strip row has a printed start `MM/DD HH:MMam/pm` and spans 4 minutes.
